@@ -1,0 +1,49 @@
+----- ( Object-Oriemted Database With php project ) ------
+====
+Author: AmirAli Dehghani
+Date: 2025/6/8
+Descriptions: 
+
+This is a simple Object-Oriented Database With php project. It uses a simple database to
+store and retrieve data. The database is implemented as a class, and it has methods
+for CRUD operations (CREATE: Insert | READ: Select or Select All | UPDATE: Update | DELETE: Delete).
+
+====
+
+How To Use:
+------------ Create a database --------------------
+1. unComment Line 2 to 5 and initialize the Variables
+
+2. create a database Within lines 7 to 18 or with phpmyAdmin
+
+------------ Create a Table --------------------
+
+1. create a table, you need to first create a Db object and connect to the database with the 
+connect_database() function, which is one of the Db methods.
+
+2. with the create_table() method, which requires a parameter, 
+which is the query you want to use to create your table.
+
+3. I have put an example for you in the index.php file.
+
+------------ Work with CRUD_operation() function --------------------
+
+1. Work With this function, you need to first create a Db object and connect to the database with the 
+connect_database() function, which is one of the Db methods.
+
+2. Create a Variable and initialize with the Db object which connects it to the function.
+
+3. The first parameter is the operation you want to be able to (insert,delete,update,select,select_all)
+
+4. The second parameter of our query is.
+
+5. The third parameter is an array of all the information related to our query.
+
+6. If you don't want to give any data or information, give it an empty array.
+
+7. The fourth parameter is the fetch mode, which is the return mode of the function,
+which defaults to PDO::FETCH_ASSOC mode, and this parameter must be of the PDO class type.
+
+8. If you don't want to get anything, don't give this parameter.
+
+9. I have put an example for you in the index.php file.
